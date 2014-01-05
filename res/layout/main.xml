@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button
+    android:id="@+id/ms"  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="mode"
+    android:layout_alignParentLeft="true"   
+   />   
+<Button
+    android:id="@+id/tp"  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@+id/ms" 
+    android:text="take"
+   />
+<Button
+    android:id="@+id/sp"  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/tp"
+    android:text="select"
+   />
+<Button
+    android:id="@+id/ap"  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/sp"
+    android:text="analyse"
+   />  
+<ImageView android:gravity="center" 
+           android:id="@+id/imagePreview"
+           android:scaleType="centerInside"
+           android:layout_width="fill_parent"
+           android:layout_height="240dip"
+           android:layout_centerVertical="true"/>
+<TextView  
+    android:id="@+id/result"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/imagePreview"
+    android:text=""
+    />
+<TextView  
+    android:id="@+id/mode"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/result"
+    android:text=""
+    />
+
+</RelativeLayout>
